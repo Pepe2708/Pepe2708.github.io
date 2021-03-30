@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--ändrar tecken set för att kunna använda flera tecken så som åäö osv-->
+        <meta content="Custom made, high quality keyboards" name="keyboard, gaming, 60%, mechanical keyboard">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Länkar detta dokument med css filen style.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--De flesta iconerna kommer från detta stylesheet-->
+		<link rel="ICON" href="bilder/favicon.ico" type="image/ico"> <!--ändrar den lilla bilden på toppen av webbläsaren till TangentKeys logga-->
+        <title>About us</title> <!--Ändrar titeln på sidan till About Us-->
+    </head>
+    <body>
+        <header>
+			<div class="clearfix"> <!--Clearfix sätter backgrunden till svart och texten till vit-->
+				<a href="index.html">
+				<img id="logo" src="bilder/tk.gif" alt="TangentKeys logo">  <!--TangentKeys logga som länkar till index sidan-->
+				<span class="name">
+					<b>tangent</b>keys  <!--Namnet TangentKeys där Tangent står skrivet i bold-->
+				</span>
+				</a>
+				<div class="user-navigation">
+					<div id="cart-quantity">1</div> <!--vissas om användaren har lagt något i kundvagnen-->
+					<a href='#' onclick="enterCart()"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a> <!--Länkar till cart om kundvagnen har något i sig annars länkar den till cart-empty-->
+					<a href="login.html"><i style="width: 100px" class="fa fa-user fa-4x"></i></a> <!--Profil icon som länkar till Login sidan-->
+				</div>
+			</div>
+			<div class="navmenu">	
+				<ul>
+					<li class="button" onclick="location.href='store.html'">Store</li> 
+					<li class="button" onclick="location.href='news.html'">News</li>
+				</ul>
+				<div class="dropdown">
+					<button class="dropbtn">Other</button> <!--Dropdown meny som dropar ner när musen är över-->
+					<div class="dropdown-content">
+						<a href="faq.html">FAQ</a> <!--Dropdown inehåller FAQ och about us-->
+						<a href="about-us.html">About</a>
+					</div>
+				</div>
+			</div>
+        </header>
+		<main>
+			<div class="clearfix">
+					<h1 class="h1_news">About us</h1> 
+					<h2>Read about how TangentKeys came to be</h2>
+					<a href="product.html"><img id="main_product" src="bilder/bildspel/img3.jpg" alt="två tk60% tangentbord bredvid varandra"></a> <!--Visar bilden-->
+                <div class=about_us_content> <!--Texten om företaget visar här-->
+                    <h2>
+                        TangentKeys
+                    </h2>
+                    <p>
+                        We at TangentKeys have always hade a big interest in gaming and later in life we aquired another big interest. Quality, we wanted something more
+                        we wanted a keyboard that was custom made to our needs as "gamers" so we set out on our path, to create our own "Perfekt" keyboard. The path to creating the TK60
+                        has been far longer than we suspected and it took many iteratisons until we were completely satisfied with our creation, but after months of hard work we can now present
+                        Our Perfekt Keyboard the TK60% 
+                    </p>
+                </div>
+
+			</div>
+		</main>
+        <footer>
+			<div id="footer-wrapper" class="clearfix">
+				<div class="footer-links">
+					<a href="index.html"><img id="footer_logo" src="bilder/tk.gif" alt="TangentKeys logo"></a> <!--Tangentkeys loggan som vissa i footern-->
+					<span class="footer_name">© 2020 TangentKeys UF</span>
+					<span class="vertical-menu"> <!--Inehåller Store news Faq och about us och länkar till respektive sida-->
+						<a style="margin-top: 50px" href="store.html" class="active">Store</a>
+						<a href="news.html">News</a>
+						<a href="faq.html">FAQ</a>
+						<a href="about-us.html">About</a>
+					</span>
+				</div>
+				<div class="footer-links">
+					<a href="https://instagram.com/tangentkeys" target="blank" class="fa fa-instagram fa-5x"></a> <!--Instagram icon och länk-->
+					<a href="https://twitter.com/tangentkeys" target="blank" class="fa fa-twitter fa-5x"></a> <!--Twitter icon och länk -->
+				</div>
+				<div class="footer_info">
+					<p>Contact information</p>
+					<p style="padding-left: 55px;">+971 4 309 4444</p>
+					<a href="mailto:Tangentkeys@contact.com" class="footer_mail"> Mail: <b>contact@tangentkeys.com</b></a> <!--Clicbar länk som leder till support mail-->
+				</div>
+			</div>
+		</footer>
+
+		<script src="javascript/main.js"></script> <!--kör Main scriptet på sidan-->
+    </body>
+</html>

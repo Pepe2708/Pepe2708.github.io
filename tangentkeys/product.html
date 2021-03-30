@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="Custom made, high quality keyboards" name="keyboard, gaming, 60%, mechanical keyboard">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/product-cart.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="ICON" href="bilder/favicon.ico" type="image/ico">
+		<title>TANDUCK60</title>
+    </head>
+    <body>
+        <header>
+			<div class="clearfix">
+				<a href="index.html">
+				<img id="logo" src="bilder/tk.gif" alt="TangentKeys logo">
+				<span class="name">
+					<b>tangent</b>keys
+				</span>
+				</a>
+				<div class="user-navigation">
+					<div id="cart-quantity">1</div>
+					<a href='#' onclick="enterCart()"><i style="width: 150px" class="fa fa-shopping-cart fa-4x"></i></a>
+					<a href="login.html"><i style="width: 100px" class="fa fa-user fa-4x"></i></a>
+				</div>
+			</div>
+			<div class="navmenu">	
+				<ul>
+					<li class="button" onclick="location.href='store.html'">Store</li>
+					<li class="button" onclick="location.href='news.html'">News</li>
+				</ul>
+				<div class="dropdown">
+					<button class="dropbtn">Other</button>
+					<div class="dropdown-content">
+						<a href="faq.html">FAQ</a>
+						<a href="about-us.html">About</a>
+					</div>
+				</div>
+			</div>
+        </header>
+    	<main>
+			<div class="clearfix">
+				<div>
+					<div id="product-image">
+						<h1>TANDUCK60RGB</h1>
+						<img src="bilder/bildspel/img0.jpg" alt="image of tanduck60 keyboard">
+					</div>
+					<div id="add-to-cart">
+						<h1 id="price">$160</h1>
+						<div>
+							<span class="change-quantity" onclick="decreaseQuantity()">-</span>
+							<span id="quantity">1</span>
+							<span class="change-quantity" onclick="increaseQuantity()">+</span>
+							
+							<p id="amount-left">Only 5 left!</p>
+
+						<button id="add-to-cart-button" onclick="addToCart()">
+								<i class="fa fa-cart-plus fa-2x"></i>
+								<span>Add to cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div id="product-info">
+					<h2>Product Information</h2>
+					<p>The keyboard is made from premium materials such as aluminium and the switches will be lubed and retooled to your specifications.
+						The premium case is machined from 404 aluminium.
+						The product is available in red, black, white, rose gold, gold, silver, and bronze.
+					</p>
+				</div>
+			</div>
+		</main>
+        <footer>
+			<div id="footer-wrapper" class="clearfix">
+				<div class="footer-links">
+					<a href="index.html"><img id="footer_logo" src="bilder/tk.gif" alt="TangentKeys logo"></a>
+					<span class="footer_name">© 2020 TangentKeys UF</span>
+					<span class="vertical-menu">
+						<a style="margin-top: 50px" href="store.html" class="active">Store</a>
+						<a href="news.html">News</a>
+						<a href="faq.html">FAQ</a>
+						<a href="about-us.html">About</a>
+					</span>
+				</div>
+				<div class="footer-links">
+					<a href="https://instagram.com/tangentkeys" target="blank" class="fa fa-instagram fa-5x"></a>
+					<a href="https://twitter.com/tangentkeys" target="blank" class="fa fa-twitter fa-5x"></a>
+				</div>
+				<div class="footer_info">
+					<p>Contact information</p>
+					<p style="padding-left: 55px;">+971 4 309 4444</p>
+					<a href="mailto:Tangentkeys@contact.com" class="footer_mail"> Mail: <b>contact@tangentkeys.com</b></a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="javascript/main.js"></script>
+		<script src="javascript/productQuantity.js"></script>
+    </body>
+</html>

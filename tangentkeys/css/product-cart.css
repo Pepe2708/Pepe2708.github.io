@@ -1,0 +1,143 @@
+#product-image {
+    width: 60%; 
+    float: left;
+}
+
+#add-to-cart {
+    width: 40%; 
+    float: left;
+    text-align: center;
+}
+
+#product-image h1, #price {
+    text-align: center; 
+    font-size: 4em;
+} 
+
+main img {
+    width: 100%;
+}
+
+#quantity {
+    text-align: center; 
+    font-size: 3em;
+    margin-right: 30px; 
+    margin-left: 30px;
+}
+
+.change-quantity {
+    font-family: "Arial";
+    text-align: center; 
+    font-size: 3em; 
+    border-style: solid; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    user-select: none; 
+    cursor: pointer;
+}
+
+#amount-left {
+    color: crimson; 
+    font-size: 3em; 
+    margin-top: 90px;  
+    margin-bottom: 90px;
+}
+
+#add-to-cart-button span {
+    font-size: 1.5em; 
+    margin-right: 50px; 
+    position: relative; 
+    bottom: 10px; 
+    font-family: Alegreya Sans SC Light;
+}
+
+#product-info {
+    width: 75%; 
+    float: left; 
+    text-align: left; 
+    margin-bottom: 100px;
+}
+
+#product-info h2 {
+    text-align: left; 
+    padding-left: 50px; 
+    font-size: 4em;
+}
+
+#product-info p {
+    margin-left: 50px; 
+    font-size: 2em;
+}
+
+main a, main p {
+    font-size: 3em;
+}
+
+#back-to-shopping:hover {
+    text-decoration: underline;
+}
+
+#product-name {
+    text-align: left; 
+    font-size: 4em; 
+    margin-left: 50px;
+}
+
+#remove-item {
+    font-size: 5em; 
+    width: 5%; 
+    float: left; 
+    margin-top: 120px; 
+    margin-left: 75px; 
+    border-style: solid; 
+    user-select: none; 
+    cursor: pointer;
+}
+
+#change-quantity-in-cart img {
+    width: 50%; 
+    float: left; 
+    margin-left: 100px;
+}
+
+#cart-summary {
+    padding-bottom: 500px;
+}
+
+#cart-summary div {
+    float: right; 
+    clear: both; 
+    margin-right: 180px; 
+    padding-left: 60%;
+}
+
+#cart-summary p {
+    text-align: left;
+}
+
+#cart-summary button {
+    margin-top: 70px; 
+    float: right; 
+    margin-right: 75px;
+}
+
+#back-to-shopping {
+    float: left; 
+    margin-left: 75px; 
+    margin-top: 55px;
+}
+
+#empty-cart {
+    padding-bottom: 250px;
+}
+
+#empty-cart h1 {
+    margin-top: 250px; 
+    margin-bottom: 250px; 
+    font-size: 4em;
+}
+
+#empty-cart a {
+    float: none;
+    font-size: 3em;
+}

@@ -1,0 +1,555 @@
+@font-face {
+	font-family: Alegreya Sans;
+	src: url(../typsnitt/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: Alegreya Sans SC Thin;
+	src: url(../typsnitt/AlegreyaSansSC-Thin.ttf);
+}
+
+@font-face {
+	font-family: Alegreya Sans SC Light;
+	src: url(../typsnitt/AlegreyaSansSC-Light.ttf);
+}
+
+@keyframes in {
+	from {
+		right: 0%;
+	}
+	to {
+		right: 100%;
+	}
+}
+
+@keyframes ut {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+#slideshow-wrapper:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#slideshow-wrapper {
+	height: 800px;
+}
+
+#bildspel {
+	  position: relative;
+	  width: 100%;
+	  height: 800px;
+	  overflow-x: hidden;
+	  z-index: -1;
+	  pointer-events: none;
+}
+
+#bild {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	animation-name: in;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	background-image: url('../bilder/bildspel/img0.jpg');
+	pointer-events: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#nybild {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	animation-name: ut;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	background-image: url('../bilder/bildspel/img1.jpg');
+	pointer-events: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#buttons {
+	position: relative;
+	top: 80px;
+	z-index: 1;
+	width: 100%;
+	height: inherit;
+	font-size: 200px;
+	
+}
+
+.fa-chevron-right, .fa-chevron-left {
+	position: absolute;
+	color: rgba(80, 80, 80, 0.5);
+	top: 1em;
+	cursor: pointer;
+}
+
+.fa-chevron-right {
+	right: 0%;
+}
+
+
+.fa-chevron-right:hover, .fa-chevron-left:hover, .fa-chevron-down:hover {
+	color: white;
+}
+
+.fa-chevron-left {
+	left: 0%;
+}
+
+.user-navigation {
+	float: right;
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
+#cart-quantity {
+	font-family: 'Alegreya Sans SC';
+	position: absolute;
+	font-size: 24px;
+	text-align: center;
+	padding-left: 90px;
+	user-select: none;
+	pointer-events: none;
+	
+	text-align: center;
+	text-decoration: none;
+}
+
+.dropbtn {
+	font-family: "Alegreya Sans SC Light";
+	background-color: black;
+	color: white;
+	font-size: 2.5em;
+	border: none;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid white;
+	transition-duration: 0.4s;
+	height: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 33.33%;
+  z-index: 1;
+  top: 0px;
+}
+
+.dropdown-content {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0%;
+  z-index: -1;
+  transition-duration: 0.2s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	transition-duration: 0.2s;
+	top: 100%;
+	background-color: #f1f1f1;
+	z-index: -1;
+}
+
+.dropbtn:hover + .dropdown-content a {
+	color: black;
+	transition-duration: 0.2s;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: white;
+	color: black;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+    display: inline;
+    user-select: none;
+}
+
+.vertical-menu {
+	display: inline;
+	margin: 0;
+}
+
+.vertical-menu a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	width: 500px;
+}
+.vertical-menu a:hover, #back-to-shopping:hover{
+	text-decoration: underline;
+}
+
+.footer_name {
+	font-size: 1.5em;
+	margin-left: 20px;
+	float: left;
+	clear: left;
+}
+
+.footer-links {
+	float: left; 
+	width: 30%;
+	margin-left: 15px;
+}
+
+.info {
+	background-color: black;
+	height: 320px;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 10px;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+.fa-twitter:hover, .fa-instagram:hover, .fa-shopping-cart:hover, .fa-user:hover {
+	color: black;
+	background-color: white;
+}
+
+.fa-twitter {
+	background: black;
+	color: white;
+	width: 80px;
+	float: right;
+	clear: none;
+	margin-right: 70%;
+	margin-top: 5px;
+}
+
+.fa-instagram {
+	background: black;
+	color: white;
+	width: 80px; 
+	float: right;
+	clear: none;
+	margin-right: 70%;
+}
+
+.h1_news {
+	font-family: "Alegreya Sans SC Thin";
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 50px;
+}
+.h1_login {
+	font-family: "Alegreya Sans SC thin";
+	color: white;
+	text-align: center;
+	font-size: 34px;
+	margin-top: -10px;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: "Alegreya Sans SC Light";
+	font-size: 30px;
+	padding-top: 0px;
+}
+.body_text {
+	font-family: "Alegreya Sans";
+	text-align: left;
+	font-size: 24px;
+	margin-left: 500px;
+	margin-right: 500px;
+
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: #141414;
+	font-family: "Alegreya Sans";
+}
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	clear: both;
+}
+
+#footer-wrapper {
+	padding-bottom: 80px; 
+	padding-top: 20px;
+}
+
+main {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#logo {
+	float: left;
+	height: 128px;
+}
+
+#footer_logo {
+	float: left;
+	height: 256px;
+	padding-right: 80px;
+}
+.footer_info {
+	font-size: 40px;
+	font-family: "Alegreya Sans SC Thin";
+	float: Right;
+	padding-right: 100px;
+}
+.footer_mail {
+	font-size: 20px;
+	font-family: "Alegreya Sans SC Thin";
+	float: Right;
+	clear: left;
+	padding-right: 10%;
+}
+
+.FAQ_text {
+	text-align: left;
+	margin-left: 600px;
+}
+
+.FAQ_text h3{
+	color: lightblue;
+	margin-bottom: -10px;
+	text-align: left;
+}
+
+.FAQ_text a:hover{
+	text-decoration: underline;
+	color: #ffc107;
+	font-weight: bold;
+}
+
+.name {
+	position: relative;
+	font-size: 6em;
+	font-family: "Alegreya Sans SC Thin";
+	padding-left: 5px;
+}
+
+.clearfix a {
+	text-decoration: none;
+	color: white;
+}
+
+.clearfix {
+	overflow: auto;
+	color: white;
+	background-color: black;
+}
+
+.creat_account_menu {
+	overflow: auto;
+	color: #fff;
+	background-color: #000;
+	width: 320px;
+	height: 650px;
+	top: 60%;
+	left: 42%;
+	position: relative;
+}
+
+.creat_account_menu input{
+	width: 80%;
+	margin-bottom: 20px;
+}
+.creat_account_menu p {
+	text-align: left;
+	padding-left: 30px;
+	font-size: 20px;
+	margin-bottom: 0px;
+	font-family: "Alegreya Sans SC thin";
+	font-weight: bold;
+	color: white;
+}
+
+.creat_account_menu input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+}
+
+.creat_account_menu input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.creat_account_menu input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.creat_account_menu a {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 20px;
+	color: darkgrey;
+	text-align: center;
+}
+
+.creat_account_menu a:hover {
+	color: #ffc107;
+}
+
+.login_menu {
+	overflow: auto;
+	color: #fff;
+	background-color: #000;
+	width: 320px;
+	height: 440px;
+	top: 60%;
+	left: 42%;
+	position: relative;
+}
+.login_menu p {
+	text-align: left;
+	padding-left: 30px;
+	font-size: 20px;
+	margin-bottom: 0px;
+	font-family: "Alegreya Sans SC thin";
+	font-weight: bold;
+	color: white;
+}
+
+.login_menu input {
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+.login_menu input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+}
+
+.login_menu input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login_box input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.login_menu a {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 20px;
+	color: darkgrey;
+	text-align: center;
+}
+
+.login_menu a:hover {
+	color: #ffc107;
+}
+
+.button {
+	float: left;
+	width: 33.33%;
+	color: white;
+	background-color: black;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid white;
+	font-size: 2.5em;
+	font-family: "Alegreya Sans SC Light";
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	color: black;
+	background-color: white;
+	box-sizing: border-box;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.about_us_content p {
+	float: left;
+	text-align: left;
+	font-family: Alegreya Sans SC Light;
+	margin-left: 550px;
+	margin-right: 550px;
+	font-size: 18px;
+}
+.navmenu:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#add-to-cart-button {
+	font-size: 3em;
+	background-color: darkgreen;
+	color: greenyellow;
+	font-family: "Alegreya Sans SC";
+	border: 0px;
+	transition-duration: 0s;
+}
+
+#add-to-cart-button:hover {
+	background-color: green;
+	cursor: pointer;
+}
+
+.fa-cart-plus {
+	padding: 5px;
+}

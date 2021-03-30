@@ -1,0 +1,86 @@
+#product-filter {
+    font-family: Alegreya Sans SC Light;
+    font-size: 24px;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    float: left;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#products {
+    position: relative;
+    float: left;
+}
+
+.product {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 400px;
+
+    background-color: black;
+    color: white;
+
+    float: right;
+
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    user-select: none;
+    text-decoration: none;
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.product-text {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family: Alegreya Sans SC Light;
+    font-size: 48px;
+    padding-top: 180px;
+    line-height: 0;
+}
+
+.product-text::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    margin-top: 20px;
+    display: block;
+    background: white;
+    transition: 300ms;
+}
+
+.product:hover .product-text::after {
+    width: 100%;
+}
+
+.product-type-text {
+    font-family: Alegreya Sans SC Light;
+	text-align: center;
+    font-size: 24px;
+    line-height: 0;
+    z-index: 1;
+}
+.info-texts {
+    font-family: Alegreya Sans SC Light;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 36px;
+    height: auto;
+    line-height: 0.4;
+    z-index: 1;
+}
+
+#keyboards, #custom-assembly, #pcbs {
+    display: inline;
+}
